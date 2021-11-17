@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+  }
+/*repeated css variables will be here*/
+:root {
+    --cran: rgb(90, 0, 8);
+    --peac: rgb(212, 147, 24);
+    --oran: rgb(253, 236, 205);
+    --white: white;
+    --green: rgb(13, 75, 13);
+}
+
+/*setting the body of the site with the following attributes*/
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 117, 53);
+    min-height: 0;
+    justify-content: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*the header follows the following. background gif and the title is white*/
+header{
+    display: flex;
+    background-image: url("https://c.tenor.com/P6SYovjQV0YAAAAC/autumn-leaves-falling.gif");
+    border-bottom: var(--cran);
+    color: var(--oran);
+    font-size: 300%;
+    border-width: 0cm;
+}
+
+/* the css code for the footer will be presented below */
+footer {
+    margin-top: auto;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background-image: url("https://c.tenor.com/P6SYovjQV0YAAAAC/autumn-leaves-falling.gif");
+}
+
+/*center the title of the page*/
+h1{
+    margin: auto;
+}
+
+
+/*the nav bar links use the following*/
+nav {
+    display: flex;
+    background-color: var(--peac);
+    justify-content : flex-end;
+}
+/* the nav bar elements follow the following characteristics */
+nav a {
+    color: var(--cran);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center; 
+}
+
+/* when the curser passes over the nav elements it would changed to white */
+nav a:hover{
+    color: var(--white);
+}
+
+/* each of the sections in the html would have a boarder around it with the following attruibutes */
+section{
+    display: flexbox;
+    height: 500px;
+    width: 70%;
+    margin: 50px auto 10px auto;
+    border: 15px double var(--cran);
+}
+
+/* all variables within the the section container in the html will be centered */
+section p {
+    text-align: center;
+}
+
+/*the subtitles are centered and have a font size of 50*/
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+/* center the titles for each of the projects in the portfolio section */
+h3{
+    text-align: center;
+}
+.me{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+}
+/* the box of each class has a background white */
+.aboutMe,
+.appBack,
+.contactBack{
+    background-color: var(--white);
+}
+.row {
+    display: flex;
+  }
+.column{
+  flex: 33.33%;
+  padding: 5px;
+}  
+/* the apps will appear in block formation */
+#boo,
+#busi,
+#password,
+#codeQuiz,
+#dayPlanner{
+    display: table;
+    margin: auto;
+    border-radius: 10%;
+    border: 5px solid var(--cran);
+}
+/**makes the curser zoom in or the image when it passes over it*/
+#busi:hover,
+#boo:hover,
+#me:hover,
+#password:hover,
+#codeQuiz:hover,
+#dayPlanner:hover{
+    transform: scale(1.1); 
+}
+#boolink,
+#busilink,
+#passwordlink,
+#codeQuizlink,
+#dayPlannerlin{
+    text-align: center;
+}
+
+.row2{
+    text-align: center;
+    display: flex;
+    line-height: 10%;
+}
+#column1,
+#column2,
+#column3,
+#column4,
+#column5{
+    display:table;
+    width: 50%;
+}
+/*attributes for the contact me icons*/
+.fa {
+    padding: 50px;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/*when curser hovers over the icons they become faded*/
+.fa:hover{
+    opacity: 0.7;
+}
+
+/*colouring the linkedin icon*/
+.fa-linkedin{
+    background: rgb(29, 109, 230);
+    color: white;
+}
+/*editing the github icon*/
+.fa-github{
+    background: black;
+    color: white;
+}
+/* make the text look more visible */
+#email{
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/* the media query is to change the background of the body when the site reaches the following width ranges */
+@media screen and (max-width: 990px){
+  body{
+      background-color: lightcoral;
+  }
+}
+@media screen and (max-width: 750px){
+    body{
+        background-color:rebeccapurple ;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: var(--white);
+    }
+}
